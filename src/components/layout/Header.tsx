@@ -1,22 +1,13 @@
 import { useState, useEffect } from "react"
 import { Link, useLocation } from "react-router-dom"
-import { Menu, Pill, MessageSquare, ShoppingCart } from "lucide-react"
+import { Menu, Pill, MessageSquare } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
-import {
-    Dialog,
-    DialogContent,
-    DialogDescription,
-    DialogHeader,
-    DialogTitle,
-    DialogTrigger,
-} from "@/components/ui/sheet" // This was using Dialog from sheet? Actually Header.tsx had Sheet import
 import {
     Sheet,
     SheetContent,
     SheetTrigger,
 } from "@/components/ui/sheet"
-import { InquiryModal } from "@/components/shared/InquiryModal"
 import { cn } from "@/lib/utils"
 
 export function Header() {
